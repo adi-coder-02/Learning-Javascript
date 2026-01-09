@@ -1,0 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    min-height: 100vh;
+    background: #0f0f0f;
+    color: #eaeaea;
+    padding: 40px;
+}
+
+/* Utility classes (Tailwind-like) */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-10 {
+    gap: 40px;
+}
+
+.px-5 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.outline-none {
+    outline: none;
+}
+
+/* Input */
+input {
+    width: 300px;
+    background: #111;
+    color: #888;
+    border: 1px solid #222;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #555;
+}
+
+/* Card */
+.card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Background image */
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Blurred overlay */
+.blurred-layer {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Content */
+.content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0)
+    );
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.content p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+/* Hover effects */
+.card:hover .blurred-layer {
+    opacity: 1;
+}
+
+.card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+}
