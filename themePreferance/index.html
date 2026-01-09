@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Preference</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="theme-container">
+        <h2>Theme Preference</h2>
+        <p>Choose your preferred theme</p>
+
+        <div class="toggle-wrapper">
+            <span>🌞 Light</span>
+
+            <!-- Toggle Switch -->
+            <label class="switch" id="toggle">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+
+            <span>🌙 Dark</span>
+        </div>
+
+        <p class="status" id="statusText">
+            Current Theme: Light
+        </p>
+    </div>
+
+    <!-- Your JS -->
+    <script src="script.js"></script>
+</body>
+</html>
