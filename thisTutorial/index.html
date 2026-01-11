@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+
+        <!-- Form -->
+        <div class="form-wrapper">
+            <h2>Add New User</h2>
+
+            <form class="user-form">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter full name">
+                </div>
+
+                <div class="field">
+                    <label for="role">Role</label>
+                    <input id="role" type="text" placeholder="e.g. Frontend Developer">
+                </div>
+
+                <div class="field">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" placeholder="Short bio about the user"></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="photo">Photo URL</label>
+                    <input id="photo" type="url" placeholder="https://example.com/photo.jpg">
+                </div>
+
+                <button type="submit" class="submit-btn">Add User</button>
+            </form>
+        </div>
+
+        <!-- Users -->
+        <div class="user-container">
+            <!-- user cards here -->
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
